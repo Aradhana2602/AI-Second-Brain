@@ -1,0 +1,297 @@
+.insights-panel {
+  animation: fadeIn 0.4s ease-out;
+}
+
+.back-btn {
+  background: none;
+  border: 2px solid #667eea;
+  color: #667eea;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  margin-bottom: 20px;
+  font-size: 0.95rem;
+}
+
+.back-btn:hover {
+  background: #667eea;
+  color: white;
+}
+
+.insights-title {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.insights-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.insight-card {
+  background: white;
+  border-radius: 15px;
+  padding: 20px;
+  border-left: 5px solid #667eea;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.insight-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.insight-card h3 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 15px;
+  margin-top: 0;
+}
+
+.insight-card.energy {
+  border-left-color: #ff6b6b;
+}
+
+.insight-card.productivity {
+  border-left-color: #667eea;
+}
+
+.insight-card.symptoms {
+  border-left-color: #ffd93d;
+}
+
+.insight-card.mood {
+  border-left-color: #9c27b0;
+}
+
+.insight-card.cycle {
+  border-left-color: #ff6b6b;
+}
+
+.insight-stat {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.stat-value {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #667eea;
+}
+
+.stat-label {
+  color: #999;
+  font-size: 0.9rem;
+}
+
+.insight-trend {
+  font-size: 1rem;
+  color: #666;
+  margin: 10px 0;
+  padding: 10px;
+  background: #f5f7ff;
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+.insight-detail {
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid #e0e0e0;
+}
+
+.detail-label {
+  font-weight: 600;
+  color: #333;
+  margin: 0 0 8px 0;
+  font-size: 0.95rem;
+}
+
+.detail-value {
+  color: #667eea;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.detail-value.small {
+  font-size: 0.95rem;
+}
+
+.cycle-description {
+  color: #666;
+  font-size: 0.9rem;
+  margin-top: 10px;
+  padding: 10px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  line-height: 1.5;
+}
+
+.insight-detail ul {
+  list-style: none;
+  padding: 0;
+  margin: 8px 0 0 0;
+}
+
+.insight-detail li {
+  color: #666;
+  padding: 5px 0;
+  font-size: 0.9rem;
+}
+
+.insight-detail li:before {
+  content: "• ";
+  color: #667eea;
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+.no-data {
+  color: #999;
+  font-style: italic;
+  margin: 10px 0;
+}
+
+.symptoms-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.symptoms-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  background: #f9f9f9;
+  border-radius: 6px;
+}
+
+.symptoms-list .count {
+  background: #667eea;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.mood-distribution {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.mood-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.mood-name {
+  min-width: 70px;
+  font-weight: 500;
+  color: #333;
+  text-transform: capitalize;
+  font-size: 0.9rem;
+}
+
+.bar-container {
+  flex: 1;
+  height: 20px;
+  background: #e0e0e0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.bar-fill {
+  height: 100%;
+  border-radius: 10px;
+  transition: width 0.4s ease;
+}
+
+.mood-count {
+  min-width: 30px;
+  text-align: right;
+  color: #666;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.recommendations-section {
+  margin-top: 40px;
+  padding: 30px;
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
+  border-radius: 15px;
+  border: 2px solid #667eea;
+}
+
+.recommendations-section h3 {
+  font-size: 1.4rem;
+  color: #333;
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+
+.recommendations {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.recommendation-card {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  border-left: 4px solid #667eea;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+.recommendation-card p {
+  margin: 0;
+  color: #333;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.insights-summary {
+  text-align: center;
+  margin-top: 30px;
+  padding: 20px;
+  background: #f5f7ff;
+  border-radius: 10px;
+  color: #666;
+}
+
+.insights-summary p {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.insights-summary strong {
+  color: #667eea;
+  font-weight: bold;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .insights-grid {
+    grid-template-columns: 1fr;
+  }
+}
